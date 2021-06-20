@@ -15,7 +15,7 @@ function HomeScreen() {
   }, [])
   return (
     <div>
-      <h1>Latest Product</h1>
+      <h1>Latest Prduct</h1>
       <ListGroup variant="success">
         <Row>
           {products.map((product) => (
