@@ -1,13 +1,16 @@
 import React from "react"
 import { Navbar, Nav, Container } from "react-bootstrap"
 import { LinkContainer } from "react-router-bootstrap"
+import logo from "./logo.svg"
 function Header() {
   return (
     <header>
       <Navbar bg="light" variant="light" expand="lg" collapseOnSelect>
         <Container>
           <LinkContainer to="/">
-            <Navbar.Brand>Narume</Navbar.Brand>
+            <Navbar.Brand>
+              <img src={logo} alt="Navbar" width="100"></img>
+            </Navbar.Brand>
           </LinkContainer>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">

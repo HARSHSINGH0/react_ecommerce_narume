@@ -15,9 +15,6 @@ function ProductScreen({ match }) {
   }, [])
   return (
     <div>
-      <Link to="/" className="btn btn-secondary my-3">
-        Go back
-      </Link>
       <Row>
         <Col md={6}>
           <Image src={product.image} alt={product.name} fluid></Image>
@@ -69,7 +66,7 @@ function ProductScreen({ match }) {
               <ListGroup.Item>
                 <Button
                   className="btn btn-success w-100"
-                  disabled={product.countInStock == 0}
+                  disabled={product.countInStock === 0}
                   type="button"
                 >
                   Add to cart
@@ -79,6 +76,13 @@ function ProductScreen({ match }) {
           </Card>
         </Col>
       </Row>
+      <hr class="mt-3 mb-5" />
+      <Link
+        to="/"
+        className="btn btn-secondary my-3 w-100 border border-bottom"
+      >
+        Go back
+      </Link>
     </div>
   )
 }

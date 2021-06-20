@@ -11,6 +11,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 @import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap");
+
 :root {
   --bs-blue: #007bff;
   --bs-indigo: #6610f2;
@@ -2831,12 +2832,14 @@ fieldset:disabled .btn {
   color: #fff;
   background-color: #4bbf73;
   border-color: #4bbf73;
+  opacity: 1;
 }
 .btn-success:hover {
   color: #fff;
   background-color: #40a262;
   border-color: #3c995c;
 }
+
 .btn-check:focus + .btn-success,
 .btn-success:focus {
   color: #fff;
